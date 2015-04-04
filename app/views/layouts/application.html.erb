@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vodeclic</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track'  => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<nav class="navbar navbar-fixed-top background-navbar">
+  <div class="container-fluid">
+    <ul class="nav narbar-nav">
+      <div class="btn-group pull-right">
+      <a href="#" class="btn btn-sm btn-default links"><span class="glyphicon glyphicon-earphone" style="color:#FE2EC8"></span> +33 (0)1 83 64 04 10</a>
+      <a href="#" class="dropdown-toggle links" data-toggle="dropdown">Français<span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="http://www.vodeclic.com/en/events/white_papers">Anglais</a></li>
+      </ul>
+      </div>
+    </ul>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+      	<%= link_to(image_tag("logo_vodeclic_text.png", :class => "img-responsive center-block"), "http://www.vodeclic.com/fr") %>
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a class="links" href="http://www.vodeclic.com/fr/produit">Produit<span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle links" data-toggle="dropdown">Offres</a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a chref="http://www.vodeclic.com/fr/solutions/entreprises">Entreprises</a></li>
+            <li><a href="http://www.vodeclic.com/fr/solutions/education">Education</a></li>
+            <li><a href="http://www.vodeclic.com/fr/solutions/bibliotheques">Bibliothèques</a></li>
+            <li><a class="links" href="http://www.vodeclic.com/fr/solutions/centres_formation">Centres de formation</a></li>
+          </ul>
+        </li>
+        <li class="active"><a class="links" href="http://www.vodeclic.com/fr/integration">Intégration</a></li>
+        <li class="active"><a class="links" href="http://www.vodeclic.com/fr/catalogue">Catalogue</a></li>
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle links" data-toggle="dropdown">Ressources</span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.vodeclic.com/fr/evenements/livreblancs">Livres blanc</a></li>
+            <li><a href="http://www.vodeclic.com/fr/evenements/webinars">Webinars</a></li>
+            <li><a href="http://www.vodeclic.com/fr/societe/clients">Clients</a></li>
+            <li><a href="http://blog.vodeclic.com/">Blog</a></li>
+          </ul>
+        </li>
+        <a href="#" class="btn btn-lg demo-button">Demander une démo</a>
+        <a href="https://lms.vodeclic.com/fr/auth/lms/connexion" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-lock" style="color:#FE2EC8"></span>Connexion</a>
+        </ul>
+      </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<%= yield %>
+
+</body>
+</html>

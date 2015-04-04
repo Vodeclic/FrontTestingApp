@@ -1,0 +1,2 @@
+class WhitePapersController < ApplicationController
+end
