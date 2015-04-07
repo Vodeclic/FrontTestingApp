@@ -1,0 +1,50 @@
+article {
+    padding-left: 8em;
+    padding-right: 8em;
+}
+
+footer {
+    padding-left: 8em;
+    padding-right: 8em;
+    background-color: #2E2E2E;
+}
+
+.white-paper {
+    color: #FE2EC8;
+}
+
+.footer-links {
+    color: #6E6E6E;
+}
+
+.links {
+        color: grey;
+}
+
+.subtitle {
+    padding-top: 8em;
+    background-color: #282828;
+    color: white;
+}
+
+img:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+
+.text-content:hover .image-caption {
+ bottom: 0;
+}
+
+ul {         
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+}
+
+article ul li {     
+    list-style:none;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 3em;
+    margin-right: 3em;         
+}
